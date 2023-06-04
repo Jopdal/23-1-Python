@@ -26,6 +26,7 @@ list2 = [10,20,30,40]
 hapList = list(map(lambda n1, n2 : n1 + n2, list1,list2))
 print(hapList)
 """
+"""
 def count(num) :
      if num >= 1:
           print(num,end=" ")
@@ -35,4 +36,5 @@ def count(num) :
      
 count(10)
 print("")
-count(20)
+count(20)"""
+
