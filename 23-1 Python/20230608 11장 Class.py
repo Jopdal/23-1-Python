@@ -71,17 +71,18 @@ sedan1.upSpeed(200)"""
 ## 실습 2 [과제] ##
 
 class Circle :
-    def area(self, radius) :
-        print("원의 넓이는 %0.1f"%((radius**2)*3.14))
-    def round(self, radius) :
-        print("원의 둘레는 %0.1f"%(2*3.14*radius))
+    def __init__ (self, radius) :
+        self.radius = radius
+    
+    def area(self) :
+        print("원의 넓이는 %0.1f"%((self.radius**2)*3.14))
+    def round(self) :
+        print("원의 둘레는 %0.1f"%(2*3.14*self.radius))
 
 cir1 = None
-
-cir1 = Circle()
-
 print("원의 넓이와 둘레를 알려드립니다.")
 r=int(input("반지름을 입력하세요: "))
+cir1 = Circle(r)
 
-cir1.area(r)
-cir1.round(r)
+cir1.area()
+cir1.round()
